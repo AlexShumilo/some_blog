@@ -1,0 +1,36 @@
+.post, .post-show_body {
+	margin-bottom: 1em;
+	padding: 1em;
+	border-bottom: 1px solid lightblue;
+}
+.post_summary {
+	padding: 0.5em 0;
+}
+.post_head a:hover {
+	text-decoration: none;
+	transition-timing-function: ease-in-out;
+	transform: scale(0.7);
+	transition: all 0.7s;
+	color: #09304DFF;
+}
+.post_body {
+	margin-top: 1em;
+}
+.post-show_head {
+	padding: 1.5em 0 0.5em 1.5em;
+	background-color: #ddd;
+	border-radius: 0 0 5px 5px;
+	margin-bottom: 0;
+}
+.post-show_head h1 {
+	line-height: 1;
+	margin-bottom: 0;
+}
+.post-show_body .form-group {
+	margin-top: 1em;
+	margin-bottom: 0;
+}
+.post-show_body img {
+	width: 200px;
+	height: 200px;
+}

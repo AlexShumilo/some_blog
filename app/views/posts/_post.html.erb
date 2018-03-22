@@ -1,0 +1,21 @@
+<!-- Перебираем все статьи итератором "each" и выводим их на экран 
+По внутреннему соглашению Rails он самостоятельно перебирает такой массив, в случае, если этот массив передаётся в файл с названием в начале "_...."
+-->
+
+<div class="post">
+	<div class="post_head">
+		<h2><%= link_to post.title, post_path(post) %></h2>
+		<small>
+			<time><%= post.created_at.to_date.strftime("%d %B, %Y") %></time>
+			|
+			<%= link_to 'Изменить', edit_post_path(post) %>
+			|
+			<%= link_to 'Удалить', post_path(post), method: :delete, data: {confirm: 'Вы уверены?'} %>
+		</small>
+	</div>
+	<div class="post_summary">
+		<%= post.summary %>
+	</div>
+	
+</div>
+
